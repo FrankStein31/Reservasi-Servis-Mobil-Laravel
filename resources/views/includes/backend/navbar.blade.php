@@ -8,9 +8,9 @@
             </button>
             <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
             <!-- Logo Header -->
-            <a href="index.html" class="logo d-flex align-items-center">
+            {{-- <a href="index.html" class="logo d-flex align-items-center">
                 <img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
-            </a>
+            </a> --}}
             <!-- End Logo Header -->
 
             <!-- Navbar Header -->
@@ -18,7 +18,7 @@
 
                 <div class="container-fluid p-0">
                     <div class="collapse" id="search-nav">
-                        <form class="navbar-left navbar-form nav-search ml-md-3">
+                        {{-- <form class="navbar-left navbar-form nav-search ml-md-3">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <button type="submit" class="btn btn-search pr-1">
@@ -27,7 +27,7 @@
                                 </div>
                                 <input type="text" placeholder="Search ..." class="form-control">
                             </div>
-                        </form>
+                        </form> --}}
                     </div>
                     <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
                         <li class="nav-item toggle-nav-search hidden-caret">
@@ -103,14 +103,14 @@
                         <li class="nav-item dropdown hidden-caret">
                             <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                 <div class="avatar-sm">
-                                    <img src="../assets/img/prof.jpg" alt="..." class="avatar-img rounded-circle">
+                                    <img src="{{ asset('assets/img/prof.jpg') }}" alt="..." class="avatar-img rounded-circle">
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-user animated fadeIn">
                                 <div class="dropdown-user-scroll scrollbar-outer">
                                     <li>
                                         <div class="user-box">
-                                            <div class="avatar-lg"><img src="../assets/img/prof.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                            <div class="avatar-lg"><img src="{{ asset('assets/img/prof.jpg') }}" alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
                                                 <h4>{{ Auth::user()->name }}</h4>
                                             </div>

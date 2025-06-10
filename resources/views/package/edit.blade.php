@@ -7,7 +7,7 @@
             @csrf
             @method('put')
         <div class="row justify-content-center">
-            <div class="col-md-5">
+            <div class="col-md-7">
                 <div class="card">
                     <div class="card-body">
                         <h2>Ubah Paket</h2>
@@ -47,7 +47,7 @@
                                     </div>
                                 @enderror
                                 <product-package-list :editmode="true"/>
-                            </div>          
+                            </div>
                             <hr>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                             <a href="{{ url('package') }}" class="btn btn-secondary">Kembali</a>

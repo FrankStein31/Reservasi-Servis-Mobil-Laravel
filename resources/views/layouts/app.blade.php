@@ -11,7 +11,7 @@
     <!-- API Base URL -->
     <meta name="api-base-url" content="{{ url('api') }}" />
 
-    <title>@yield('title') - {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title') </title>
 
     <!-- Scripts -->
 

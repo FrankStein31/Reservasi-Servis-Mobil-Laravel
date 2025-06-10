@@ -3,7 +3,7 @@
 @section('content')
 <h4 class="mb-4">Selamat datang, {{ Auth::user()->name }}!</h4>
 <div class="row">
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-4">
         <div class="card p-3">
             <div class="d-flex align-items-center">
                 <span class="stamp stamp-md bg-secondary mr-3">
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-4">
         <div class="card p-3">
             <div class="d-flex align-items-center">
                 <span class="stamp stamp-md bg-success mr-3">
@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-4">
         <div class="card p-3">
             <div class="d-flex align-items-center">
                 <span class="stamp stamp-md bg-danger mr-3">
@@ -42,19 +42,20 @@
             </div>
         </div>
     </div>
-    <!-- <div class="col-sm-6 col-lg-3">
+    {{-- <div class="col-sm-6 col-lg-3">
         <div class="card p-3">
             <div class="d-flex align-items-center">
                 <span class="stamp stamp-md bg-warning mr-3">
                     <i class="fa fa-comment-alt"></i>
                 </span>
                 <div>
-                    <h5 class="mb-1"><b><a href="#">132 <small>Comments</small></a></b></h5>
-                    <small class="text-muted">16 waiting</small>
+                    <h5 class="mb-1">Total Komentar</h5>
+                    <h5 class="text-muted"><b><a href="#">{{ $tot_comments }}</a></b></h5>
+                    <small class="text-muted">{{ $waiting_comments }} menunggu</small>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> --}}
+    </div>
 </div>
 <div class="row">
     <div class="col-md-8">

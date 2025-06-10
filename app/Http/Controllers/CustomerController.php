@@ -16,7 +16,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $data['customer'] = Customer::with('vehicles')->paginate(5);
+        $data['customer'] = Customer::with('vehicles')->latest()->paginate(5);
         // dd($data);
         return view('customer.index', $data);
     }

@@ -41,6 +41,14 @@
                 {{ session('flash-danger') }}
             </div>
         @endif
+        @if(request('filter_date'))
+        <div class="alert alert-info">
+            Menampilkan data pembayaran untuk tanggal: {{ date('d/m/Y', strtotime(request('filter_date'))) }}
+            <a href="{{ url('payment') }}" class="btn btn-sm btn-warning float-right">
+                <i class="fa fa-times"></i> Hapus Filter
+            </a>
+        </div>
+    @endif
             <div class="table-responsive">
                 <table id="add-row" class="display table table-striped table-hover" >
                     <thead>

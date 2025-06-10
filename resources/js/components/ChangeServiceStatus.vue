@@ -11,7 +11,6 @@
       <option value="Pending">Pending</option>
       <option value="Process">Proses</option>
       <option value="Selesai">Servis Selesai</option>
-      <!-- <option value="Finish">Finish (Khusus Android)</option> -->
     </select>
     <b-modal
       title="Proses Servis"

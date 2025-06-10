@@ -24,13 +24,13 @@ class ReservationController extends Controller
             'customer', 'package.products', 'service.mechanic', 'service.payment', 'vehicle'
         ]);
 
-        // Tambahkan filter tanggal jika ada parameter filter
+
         if ($request->has('filter_date')) {
             $filterDate = $request->filter_date;
             $data['reservation'] = $data['reservation']->whereDate('reservation_date', $filterDate);
         }
 
-        $data['reservation'] = $data['reservation']->paginate(5);
+        $data['reservation'] = $data['reservation']->latest()->paginate(5);
 
         return view('reservation.index', $data);
     }
